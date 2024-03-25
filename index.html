@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+  <body>
+    <nav id="desktop-nav">
+        
+        <img src="./assets/dbc.png" alt="dbc-logo" class="dbc-logo">
+        <div>
+            <ul class = "nav-links">
+                <li><a href="#about">About</a></li> 
+                <li><a href="#experience">Experience</a></li> 
+                <li><a href="#projects">Projects</a></li> 
+                <li><a href="#contact">Contact</a></li> 
+            </ul> 
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class = logo>Daniel's Portfolio</div>
+        <div class = hamburger-menu>
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li> 
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li> 
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li> 
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/grad.png" alt="Daniel Berridge-Coombs profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p8"> Introducing</p>
+            <h1 class="title">Daniel Berridge-Coombs</h1>
+            <p class="section__text__p2">MSc Data Science & BSc Physics Graduate</p>
+            <div class="btn-container">
+                <button
+                    class="btn btn-color-2" 
+                    onclick="window.open('./assets/DBC_CV.pdf')"
+                >
+                    Download CV
+                </button>
+                <button
+                    class="btn btn-color-1" 
+                    onclick="location.href='./#contact'"
+                >
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img 
+                src="./assets/linkedin1.png" 
+                alt="LinkedIn Profile" 
+                class="icon" 
+                onclick="location.href = 'https://www.linkedin.com/in/daniel-berridge-coombs/'"
+                >
+                <img 
+                src="./assets/git.png" 
+                alt="Gitub Profile" 
+                class="icon github-icon" 
+                onclick="location.href = 'https://github.com/DanCoombs1'"
+                >
+
+            </div>
+
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                            src="./assets/leeds3.png" 
+                            alt="education icon" 
+                            class="icon contact-icon leeds-icon"
+                        />
+                        <h3>Education</h3>
+                        <h4>University of Leeds</h4>
+                        <p>BSc Physics <br> MSc Data Science </p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                            src="./assets/education.png" 
+                            alt="experience icon" 
+                            class="icon contact-icon"
+                        />
+                        <h3>Soft Skills</h3>
+                        <p> Adaptability •&nbsp;Analytical Skills •&nbsp;Technical Writing •&nbsp;Creativity •&nbsp;Critical Thinking •&nbsp;Time Management •&nbsp;Collaboration •&nbsp;Organisation •&nbsp;Innovation •&nbsp;Professionalism •&nbsp;Leadership •&nbsp;Effective Communication</p>
+                    </div>
+                </div>
+                <div class="text-container-1">
+                    <p>
+                        A little bit about me, 
+                    </p>
+                </div>
+                <div class="text-container-2">
+                    <p>
+                        I am a recent graduate from the University of Leeds, where I studied a Bachelors in Physics as well as a Masters in Data Science and Analytics. 
+                        Achieving a first and a distinction respectively. My academic journey was not only about mastering complex subjects but also about embracing new experiences and opportunities for growth.
+                    </p>
+                    <p>
+                        One of these being sport, I have been into sport from since I can remember, playing rugby, football and many other sports. 
+                        However, throughout my time at Leeds I decided to try new sports such as, boxing, squash, and American football as I am an inquisitive person by nature and I love to learn new things. 
+                    </p>
+                    <p>
+                        However due to an unfortunate accident I am no longer able to play contact sports. This allowed me to look into alternate options, which is where I discovered a passion for fitness and the gym. 
+                        This allowed me to still socialise and meet new people as well as keep my mind and body fit and fresh. This new passion led me to take courses in personal training and nutrition, helping me understand the subject inside out. 
+                    </p>
+                    <p>
+                        As well as sports and fitness I am also fascinated by travel and different cultures around the world. My most recent travel involved me and my friends travelling around North America in an RV, covering 40 states. 
+                        This trip was life changing, not only from the memories made but also the skills and lessons developed. 
+                        A new sense of responsibility and independence as well as an increased ability to perform well under pressure, which has facilitated the development of my interpersonal and financial skills that is now use daily. 
+                        On top of this, experiencing new cultures and perspectives has expanded horizons has reshaped me into a better and more well rounded citizen. 
+                    </p>
+                    <p>
+                        This journey of education and further interests has led me to want to pursue a career in the technology sector. With a strong foundation in programming, mathematics, and data analysis, I'm ready to apply my skills to real-world problems and contribute to meaningful projects. 
+                        Having just come out of university, I am hoping for an entry level position where I can broadcast my fresh skills and new ideas. 
+                    </p>
+                    <p>
+                        As you browse through my portfolio, I hope you'll gain insight into my background, skills, and aspirations. Feel free to reach out if you'd like to connect or learn more about my work. Thank you for visiting!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img 
+            src="./assets/arrow-white.png" 
+            alt="arrow icon" 
+            class="icon arrow"
+            onclick="location.href = './#experience'"
+        />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Programming</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./assets/python.jpeg" 
+                            alt="Experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/javascript.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/java.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>Java</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/html.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/css.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/r.jpeg" 
+                            alt="Experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>R</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title"> Database</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./assets/sql.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/mysql.png" 
+                            alt="Experience icon"
+                            class="icon mysql-icon"
+                            >
+                            <div>
+                                <h3>MySQL</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/sqlite.jpeg" 
+                            alt="Experience icon"
+                            class="icon sqlite-icon"
+                            >
+                            <div>
+                                <h3>SQLite</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/tableau.png" 
+                            alt="Experience icon"
+                            class="icon tableau-icon"
+                            >
+                            <div>
+                                <h3>Tableau</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/bi.jpeg" 
+                            alt="Experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>Power BI</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Additional Software/Tools </h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./assets/latex.png" 
+                            alt="Experience icon"
+                            class="icon latex-icon"
+                            >
+                            <div>
+                                <h3>Latex</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/aws.png" 
+                            alt="Experience icon"
+                            class="icon aws-icon"
+                            >
+                            <div>
+                                <h3>AWS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/excel.png" 
+                            alt="Experience icon"
+                            class="icon excel-icon"
+                            >
+                            <div>
+                                <h3>Excel</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img 
+            src="./assets/arrow-white.png" 
+            alt="arrow icon" 
+            class="icon arrow"
+            onclick="location.href = './#projects'"
+        /> 
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                    src="./assets/football.png" 
+                    alt="Project 1"
+                    class="project-img prem-img"
+                    >
+                </div>
+                <h2 class="experience-sub-title project-title">Premier League Predictions</h2>
+                <p>Python</p>
+                <div class="btn-container">
+                    <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/DanCoombs1/premier-league-predictions-'">
+                        GitHub
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                    src="./assets/corona.png" 
+                    alt="Project 2"
+                    class="project-img"
+                    >
+                </div>
+                <h2 class="experience-sub-title project-title">Covid-19 Vaccination Plan</h2>
+                <p>Python</p>
+                <div class="btn-container">
+                    <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/DanCoombs1/Stochastic-simulation-of-Covid-19-vaccination-plans'">
+                        GitHub
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                    src="./assets/games.png" 
+                    alt="Project 3"
+                    class="project-img"
+                    >
+                </div>
+                <h2 class="experience-sub-title project-title">IMDb Video Game Analysis</h2>
+                <p>SQL / Tableau</p>
+                <div class="btn-container">
+                    <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/DanCoombs1/Video_Game_Analysis_SQL_Tableau'">
+                        GitHub
+                    </button>
+                </div>
+            </div>
+            </div>
+            <div class="extra-projects">
+                <p><a href="https://github.com/DanCoombs1">More Projects Here</a></p>
+            </div>
+        </div>
+        <img 
+            src="./assets/arrow-white.png" 
+            alt="arrow icon" 
+            class="icon arrow"
+            onclick="location.href = './#contact'"
+        /> 
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                    src="./assets/email.png" 
+                    alt="email icon"
+                    class="icon contact-icon email-icon"
+                >
+                <p><a href="mailto:dan_coombs99@hotmail.com">dan_coombs99@hotmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                    src="./assets/linkedin.png" 
+                    alt="LinkedIn icon"
+                    class="icon contact-icon"
+                >
+                <p><a href="https://www.linkedin.com/in/daniel-berridge-coombs/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class = "nav-links">
+                    <li><a href="#about">About</a></li> 
+                    <li><a href="#experience">Experience</a></li> 
+                    <li><a href="#projects">Projects</a></li> 
+                    <li><a href="#contact">Contact</a></li> 
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Daniel Berridge-Coombs. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
