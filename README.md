@@ -26,11 +26,12 @@ Welcome to my portfolio repository! This repository contains the code for my per
 - CSS3
 - JavaScript
 
-Alternatively, you can simply visit [https://dancoombs1.github.io/portfolio/](https://dancoombs1.github.io/portfolio/) to view the live version of the website.
-
 ## Usage
 
 Feel free to explore the website to learn more about me, my skills, and my projects. If you have any questions or would like to collaborate, don't hesitate to reach out using the contact information provided.
+
+[WEBSITE LINK](https://dan-coombs-portfolio.netlify.app/)
+
 
 ## License
 
